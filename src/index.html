@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dangerous Users</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title is-1">Dangerous User List</h1>
+      <h5 id="reportstext" class="subtitle is-5">reports!</h5>
+
+      <form id="checkuser" class="box">
+        <div class="field">
+          <label class="label">User ID</label>
+          <div class="control">
+            <input class="input" required="true" id="userid" placeholder="e.g. 821471227230683186">
+          </div>
+        </div>
+        <button class="button is-primary" id="submit">Check User</button>
+      </form>
+
+     <div class="box">
+        <label id="username"><b>Username:</b><br></label>
+        <label id="reports"><b>Reports:</b><br></label>
+        <label id="totalreports"><b>Total Reports:</b><br></label>
+        <label id="score"><b>Score:</b></label>
+     </div>
+    </div>
+
+    <form id="reportuser" class="box">
+      <div class="field">
+        <label class="label">User ID</label>
+        <div class="control">
+          <input class="input" required="true" id="userid2" placeholder="e.g. 821471227230683186">
+        </div>
+        <label class="label">Details</label>
+        <div class="control">
+          <input class="input" required="true" id="details" placeholder="Details">
+        </div>
+      </div>
+      <button class="button is-primary" id="submit">Report User</button>
+    </form>
+    <script defer src="render.js"></script>
+  </body>
+</html>
